@@ -6,6 +6,8 @@
                   title:          { type: #STANDARD, value: 'city' },
                   description:    { type: #STANDARD, value: 'temperature' } }
 
+@Search.searchable: true
+
 define root custom entity ZCE_WEATHER
 {
       @UI.facet: [ { id:       'WeatherFacet',
@@ -15,7 +17,6 @@ define root custom entity ZCE_WEATHER
 
       @UI.lineItem:       [ { position: 10, importance: #HIGH, label: 'City' } ]
       @UI.identification: [ { position: 10, label: 'City' } ]
-      @UI.selectionField: [ { position: 10 } ]
       @Search.defaultSearchElement: true
       @Search.fuzzinessThreshold:   0.8
   key city        : abap.string;

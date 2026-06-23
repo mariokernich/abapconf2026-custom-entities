@@ -20,6 +20,8 @@ CLASS zcl_sample_if_rap DEFINITION
       RAISING   cx_rap_query_provider.
 ENDCLASS.
 
+
+
 CLASS zcl_sample_if_rap IMPLEMENTATION.
 
 

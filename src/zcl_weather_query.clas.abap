@@ -45,6 +45,7 @@ CLASS zcl_weather_query IMPLEMENTATION.
     DATA(lt_filter_cond) = io_request->get_filter( )->get_as_ranges( ).
     DATA(lv_top)         = io_request->get_paging( )->get_page_size( ).
     DATA(lv_skip)        = io_request->get_paging( )->get_offset( ).
+    DATA(lv_search)      = io_request->get_search_expression( ).
 
     "-------------------------------------------------------------
     " 2) Determine list of cities
@@ -55,12 +56,8 @@ CLASS zcl_weather_query IMPLEMENTATION.
       WITH KEY name = 'CITY'
       ASSIGNING FIELD-SYMBOL(<ls_city_filter>).
 
-    IF sy-subrc = 0 AND <ls_city_filter>-range IS NOT INITIAL.
-      LOOP AT <ls_city_filter>-range ASSIGNING FIELD-SYMBOL(<ls_range>).
-        DATA(lv_text) = <ls_range>-low.
-        REPLACE ALL OCCURRENCES OF `*` IN lv_text WITH ``.
-        APPEND lv_text TO lt_cities.
-      ENDLOOP.
+    IF lv_search IS NOT INITIAL.
+        APPEND lv_search TO lt_cities.
     ELSE.
       lt_cities = VALUE #(
         ( `Berlin` )
