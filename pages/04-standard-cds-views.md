@@ -12,6 +12,7 @@
 
 - 🏷️ Strong typing, annotations, reusability
 - ⚡ Direct push-down to **HANA**
+- 🏎️ **Fast performance** — direct layer to the DB
 - 🔌 Generated OData out of the box
 - 🚀 Trivial to expose via Service Binding
 
@@ -26,7 +27,7 @@
 <ul class="pt-4">
 
 - 🗄️ Always needs a **persisted source**
-- 🔒 Can't build on **Clean-Core-restricted** tables
+- 🔒 Can't build on **Clean-Core-restricted** tables (custom access need e.g. class or call function)
 - 🍝 Joins + calculated fields get **messy** fast
 - 👻 Hard to express data that doesn't *exist* yet
 - 🚫 No place for **API calls** or runtime logic
