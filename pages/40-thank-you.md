@@ -31,7 +31,7 @@ Questions?
     <img
       src="/images/linkedin.png"
       alt="LinkedIn profile QR code"
-      class="w-28 h-28 object-contain"
+      class="w-40 h-40 object-contain"
     />
     <div class="opacity-60 text-xs pt-1">
       Connect on LinkedIn
@@ -41,6 +41,6 @@ Questions?
   <img
     src="/images/swan-logo.jpg"
     alt="SWAN GmbH"
-    class="h-12 object-contain"
+    class="h-20 object-contain"
   />
 </div>
