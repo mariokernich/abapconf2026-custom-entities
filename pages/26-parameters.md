@@ -1,9 +1,9 @@
-# Custom entities with parameters
+# Custom entities with parameters (Context info)
 
 ## Extra input — beyond filter, sort & paging
 
 A parameter is a **mandatory input** the consumer must supply — *not* a key and
-*not* a row filter. It feeds your logic (target currency, key date, language)
+*not* a row filter. It feeds your logic **(target currency, key date, language)**
 and shapes the data you serve back for the **same** entity.
 
 <div class="two-col pt-2">
