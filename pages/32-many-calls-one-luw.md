@@ -1,9 +1,9 @@
-# Many calls, one LUW
+# Many calls, one request
 
-## Separate `select`s — same transactional context
+## Separate `select`s — one OData request
 
-Each navigation is an **independent read**, but they all run inside the
-**same LUW** (Logical Unit of Work) for that request.
+A single request (e.g. a list **plus** its `$expand` navigations) triggers
+**several independent `select` calls** — one per entity set / navigation.
 
 <div class="two-col pt-2">
 
@@ -12,10 +12,9 @@ Each navigation is an **independent read**, but they all run inside the
 ### What that means
 
 - 🔁 N navigations → **N provider calls**
-- 🧵 All share **one** LUW / DB transaction
-- 👁️ Same **consistent** data snapshot
-- 🚫 No implicit `COMMIT` between reads
-- 🧩 Writes land in the **same** `save` sequence
+- 🧩 Each call is **self-contained** — its own request object
+- 🔍 Each gets its **own** filter, paging & sorting
+- 🛠️ Build each result **independently**
 
 </div>
 
@@ -23,7 +22,7 @@ Each navigation is an **independent read**, but they all run inside the
 
 ```mermaid {scale: 0.6}
 flowchart TB
-    subgraph LUW["One LUW"]
+    subgraph REQ["One OData request"]
         direction TB
         A["select( ) Product"]
         B["select( ) _Reviews · P-001"]
@@ -32,9 +31,9 @@ flowchart TB
     A --> B --> C
 
     classDef box fill:#fff,stroke:#000,color:#000
-    classDef luw fill:#f5f5f5,stroke:#000,color:#000
+    classDef req fill:#f5f5f5,stroke:#000,color:#000
     class A,B,C box
-    class LUW luw
+    class REQ req
 ```
 
 </div>
@@ -42,5 +41,5 @@ flowchart TB
 </div>
 
 <div class="opacity-70 text-sm pt-2">
-Don't open your own connection per call — reuse the request's context so reads stay consistent.
+Each <code>select</code> stands on its own — if you need consistency across calls (especially for remote sources), handle it yourself.
 </div>

@@ -19,10 +19,10 @@ Questions?
     Mario · Technology Manager & Trainer at SWAN GmbH
   </span>
   <div class="opacity-60 text-sm pt-2">
-    Slides &amp; code samples: https://github.com/mariokernich/abapconf2026-custom-entities
+    Slides &amp; code samples: <a href="https://github.com/mariokernich/abapconf2026-custom-entities" target="_blank" rel="noopener">https://github.com/mariokernich/abapconf2026-custom-entities</a>
   </div>
   <div class="opacity-60 text-sm pt-2">
-    You can find more guides and tutorials on my blog at kernich.de.
+    You can find more guides and tutorials on my blog at <a href="https://kernich.de" target="_blank" rel="noopener">kernich.de</a>.
   </div>
 </div>
 

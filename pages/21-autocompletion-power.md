@@ -39,6 +39,12 @@ ENDCLASS.
 The typed structure gives you full code completion on every filter field.
 </div>
 
+<img
+  src="/images/meme4.png"
+  class="rounded-lg shadow-lg max-h-[30vh] mt-4 mx-auto"
+  style="width:200px;"
+/>
+
 </div>
 
 </div>
