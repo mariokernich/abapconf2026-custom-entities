@@ -13,6 +13,12 @@ io_response->set_total_number_of_records(
   lv_total_count ).
 ```
 
+```abap
+" Quick smoke test: how many rows does the entity return?
+SELECT COUNT(*) FROM zc_demoproduct INTO @DATA(lv_count).
+out->write( |Product rows: { lv_count }| ).
+```
+
 </div>
 
 <div>
