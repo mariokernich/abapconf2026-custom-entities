@@ -172,7 +172,7 @@ CLASS zcl_weather_query IMPLEMENTATION.
     ELSEIF lv_temp_f > 127.
       rv_temperature = 127.
     ELSE.
-      rv_temperature = CONV int1( round( val = lv_temp_f dec = 0 ) ).
+     rv_temperature = lv_temp_f.
     ENDIF.
 
   ENDMETHOD.

@@ -24,5 +24,5 @@ define root custom entity ZCE_WEATHER
       @UI.lineItem:       [ { position: 20, importance: #HIGH, label: 'Temperature (°C)' } ]
       @UI.identification: [ { position: 20, label: 'Temperature (°C)' } ]
       @EndUserText.quickInfo: 'Current temperature in degrees Celsius'
-      temperature : abap.int1;
+      temperature : abap.dec(5,2);
 }
