@@ -63,109 +63,109 @@ src: ./pages/13-provider-interface-one-method.md
 ---
 
 ---
-src: ./pages/13-provider-interface-one-method2.md
+src: ./pages/14-total-number-of-records.md
 ---
 
 ---
-src: ./pages/14-service-and-ui.md
+src: ./pages/15-service-and-ui.md
 ---
 
 ---
-src: ./pages/15-what-you-must-handle.md
+src: ./pages/16-what-you-must-handle.md
 ---
 
 ---
-src: ./pages/16-ignore-the-request.md
+src: ./pages/17-ignore-the-request.md
 ---
 
 ---
-src: ./pages/17-reading-filters-ranges.md
+src: ./pages/18-reading-filters-ranges.md
 ---
 
 ---
-src: ./pages/18-filter-sql-string.md
+src: ./pages/19-filter-sql-string.md
 ---
 
 ---
-src: ./pages/19-mapping-filter-class-def.md
+src: ./pages/20-mapping-filter-class-def.md
 ---
 
 ---
-src: ./pages/20-extract-filters-dynamically.md
+src: ./pages/21-extract-filters-dynamically.md
 ---
 
 ---
-src: ./pages/21-autocompletion-power.md
+src: ./pages/22-autocompletion-power.md
 ---
 
 ---
-src: ./pages/22-pagination.md
+src: ./pages/23-pagination.md
 ---
 
 ---
-src: ./pages/23-sorting.md
+src: ./pages/24-sorting.md
 ---
 
 ---
-src: ./pages/24-parameters.md
+src: ./pages/25-parameters.md
 ---
 
 ---
-src: ./pages/25-parameters-syntax.md
+src: ./pages/26-parameters-syntax.md
 ---
 
 ---
-src: ./pages/26-extending-the-example.md
+src: ./pages/27-extending-the-example.md
 ---
 
 ---
-src: ./pages/27-two-entities-same-pattern.md
+src: ./pages/28-two-entities-same-pattern.md
 ---
 
 ---
-src: ./pages/28-associations-runtime.md
+src: ./pages/29-associations-runtime.md
 ---
 
 ---
-src: ./pages/29-reading-parent-key-child.md
+src: ./pages/30-reading-parent-key-child.md
 ---
 
 ---
-src: ./pages/30-live-demo.md
+src: ./pages/31-live-demo.md
 ---
 
 ---
-src: ./pages/31-data-vs-count-request.md
+src: ./pages/32-data-vs-count-request.md
 ---
 
 ---
-src: ./pages/32-many-calls-one-luw.md
+src: ./pages/33-many-calls-one-luw.md
 ---
 
 ---
-src: ./pages/33-behavior-cud.md
+src: ./pages/34-behavior-cud.md
 ---
 
 ---
-src: ./pages/34-create-implementation.md
+src: ./pages/35-create-implementation.md
 ---
 
 ---
-src: ./pages/35-extend-custom-entity.md
+src: ./pages/36-extend-custom-entity.md
 ---
 
 ---
-src: ./pages/36-extend-custom-entity-syntax.md
+src: ./pages/37-extend-custom-entity-syntax.md
 ---
 
 ---
-src: ./pages/37-downsides.md
+src: ./pages/38-downsides.md
 ---
 
 ---
-src: ./pages/38-when-to-pick-what.md
+src: ./pages/39-when-to-pick-what.md
 ---
 
 ---
-src: ./pages/39-thank-you.md
+src: ./pages/40-thank-you.md
 ---
