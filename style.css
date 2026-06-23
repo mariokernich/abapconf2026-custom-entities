@@ -1,0 +1,25 @@
+/* Minimal overrides on top of the apple-basic theme. */
+
+/* Make tables sit flush with the title instead of being centered. */
+.slidev-layout table {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Two-column grid helper, used in place of geist's `layout: split`. */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+/* Keep mermaid diagrams inside the slide, never overflow vertically. */
+.slidev-layout .mermaid {
+    display: flex;
+    justify-content: center;
+}
+.slidev-layout .mermaid svg {
+    max-width: 100%;
+    max-height: 58vh;
+}

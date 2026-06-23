@@ -1,0 +1,6 @@
+@EndUserText.label: 'Demo Product Service Definition Sample'
+define service ZUI_DemoProduct {
+  expose ZCE_DemoProduct;
+  expose ZCE_DemoReview;
+  expose ZCE_WEATHER;
+}

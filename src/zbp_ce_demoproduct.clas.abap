@@ -1,0 +1,5 @@
+CLASS zbp_ce_demoproduct DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zce_demoproduct.
+ENDCLASS.
+
+CLASS zbp_ce_demoproduct IMPLEMENTATION.
+ENDCLASS.
