@@ -14,7 +14,7 @@ Leveraging `IF_RAP_QUERY_PROVIDER` for full data control
 <img
   src="/images/swan-logo.jpg"
   alt="SWAN GmbH"
-  class="absolute bottom-10 right-10 h-12 object-contain"
+  class="absolute bottom-10 right-10 h-25 object-contain"
 />
 
 <!--
